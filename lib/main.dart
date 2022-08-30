@@ -15,6 +15,15 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
 
+  Widget myButton(){
+    return OutlinedButton(
+                  onPressed: (() {
+                    
+                  }),
+                  child: Text("yyy"),
+    );
+  }
+
   Widget build(BuildContext context) {
       return MaterialApp(
     debugShowCheckedModeBanner : false,
@@ -29,12 +38,10 @@ class _MyAppState extends State<MyApp> {
            Row(
 
               children: [
-                OutlinedButton(
-                  onPressed: (() {
-                    
-                  }),
-                  child: Text("yyy"),
-                ),
+                
+                myButton(),
+                myButton(),
+
             ],
            ),
         ],
