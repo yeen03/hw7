@@ -16,11 +16,13 @@ class _MyAppState extends State<MyApp> {
   @override
 
   Widget myButton(){
-    return OutlinedButton(
-                  onPressed: (() {
-                    
-                  }),
-                  child: Text("yyy"),
+    return Expanded(
+      child: OutlinedButton(
+                    onPressed: (() {
+                      
+                    }),
+                    child: Text("yyy"),
+      ),
     );
   }
 
@@ -39,6 +41,8 @@ class _MyAppState extends State<MyApp> {
 
               children: [
                 
+                myButton(),
+                myButton(),
                 myButton(),
                 myButton(),
 
