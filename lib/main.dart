@@ -3,6 +3,7 @@ import 'dart:js';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:math_expressions/math_expressions.dart';
  void main() {
    runApp(MyApp());
  }
@@ -27,13 +28,16 @@ setState(() {
     } else {
 if ( Result == "0" ) {
   Result = value;
+
    }else if ( value == " . ") {
+    
     if (Result.contains(".")){
       return;
       } else {
         Result = Result + value;
       }  
       }else if (value == "="){
+
 
     }else{
     Result = Result + value;
