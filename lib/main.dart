@@ -17,12 +17,19 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   @override
+  buttonPressed(String value){
+    print(value);
+
+  }
 
   Widget myButton(String buttonLabel){
     return Expanded(
       child: OutlinedButton(
       //Padding : EdgeInsets.all(24),
-      onPressed: () { },
+      onPressed: () { 
+      buttonPressed(buttonLabel);
+      },
+  
          child: Text(
          buttonLabel,
        style: TextStyle(
