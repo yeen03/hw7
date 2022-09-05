@@ -1,3 +1,5 @@
+import 'dart:js';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
  void main() {
@@ -15,13 +17,16 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
 
-  Widget myButton(){
+  Widget myButton(String buttonLabel){
     return Expanded(
       child: OutlinedButton(
-                    onPressed: (() {
-                      
-                    }),
-                    child: Text("yyy"),
+      //Padding : EdgeInsets.all(24),
+      onPressed: () { },
+         child: Text(
+         buttonLabel,
+       style: TextStyle(
+         fontSize: 20,
+         ),   ),
       ),
     );
   }
@@ -40,14 +45,52 @@ class _MyAppState extends State<MyApp> {
            Row(
 
               children: [
-                
-                myButton(),
-                myButton(),
-                myButton(),
-                myButton(),
+                myButton("7"),
+                myButton("8"),
+                myButton("9"),
+                myButton("/"),
 
             ],
            ),
+            Row(
+
+              children: [
+                myButton("4"),
+                myButton("5"),
+                myButton("6"),
+                myButton("x"),
+
+            ],
+           ),
+                Row(
+
+              children: [
+                myButton("1"),
+                myButton("2"),
+                myButton("3"),
+                myButton("-"),
+
+            ],
+           ),
+                Row(
+
+              children: [ 
+                myButton("."),
+                myButton("0"),
+                myButton("00"),
+                myButton("+"),
+
+            ],
+           ),
+                Row(
+
+              children: [
+                myButton("CLEAR"),
+                myButton("="),
+               
+            ],
+           ),
+           
         ],
       ),
     ),
