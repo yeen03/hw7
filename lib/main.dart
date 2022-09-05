@@ -25,7 +25,13 @@ setState(() {
   if ( value == "CLEAR" ) {
     Result= "0";
     } else {
-      Result= value;
+if ( Result == "0" ) {
+  Result = value;
+   }else{
+    Result = Result + value;
+    }
+     
+
    }  
 
 });
