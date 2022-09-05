@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'dart:js';
 
 import 'package:flutter/foundation.dart';
@@ -42,7 +43,21 @@ class _MyAppState extends State<MyApp> {
       body: Column(
         children: [
 
-           Row(
+          Container(
+            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 24),
+            alignment: Alignment.centerRight,
+            child: Text(
+              "Result",
+              style: TextStyle(
+                fontSize: 48,
+                fontWeight:FontWeight.bold
+              ),
+            ),
+          ),
+
+           Column(
+            children: [
+              Row(
 
               children: [
                 myButton("7"),
@@ -90,6 +105,8 @@ class _MyAppState extends State<MyApp> {
                
             ],
            ),
+            ],
+           )
            
         ],
       ),
