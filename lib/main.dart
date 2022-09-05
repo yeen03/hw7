@@ -54,6 +54,10 @@ class _MyAppState extends State<MyApp> {
               ),
             ),
           ),
+          Expanded(
+            child: Divider(),
+          ),
+
 
            Column(
             children: [
