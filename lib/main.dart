@@ -164,6 +164,7 @@ if ( Result == "0" ) {
         ),
       ),
     ),
+    theme: ThemeData(primarySwatch: Colors.blue),
     );
     
   }
